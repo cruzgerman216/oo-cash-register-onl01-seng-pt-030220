@@ -39,6 +39,6 @@ class CashRegister
      if @items.include?(str)
        @total -= @price
        @items.pop
-
+end
    end
 end
