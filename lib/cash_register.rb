@@ -37,7 +37,7 @@ class CashRegister
       @total = 0.0
     else
       @total -= @price
-      
+
     end
 
    end
