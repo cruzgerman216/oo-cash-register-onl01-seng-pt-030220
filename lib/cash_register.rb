@@ -22,9 +22,11 @@ class CashRegister
    end
 
    def apply_discount
-     @to_take_off = (price * discount)/100
-     @total -= @to_take_off
-     str =  "After the discount, the total comes to $#{@total.to_i}."
-     str
+     if discount > 0
+       @total -= (price * discount)/100
+       str =  "After the discount, the total comes to $#{@total.to_i}."
+       str
+    else
+      "there is no discount to apply."
    end
 end
