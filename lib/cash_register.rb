@@ -33,7 +33,7 @@ class CashRegister
 
    def void_last_transaction
      str = @items[@items.length - 1]
-     
+
      @total -= @price
      @items.pop
      if @items.include?(str)
