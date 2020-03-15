@@ -27,6 +27,6 @@ class CashRegister
        str =  "After the discount, the total comes to $#{@total.to_i}."
        str
     else
-      "there is no discount to apply."
+      "There is no discount to apply."
    end
 end
